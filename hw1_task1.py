@@ -12,4 +12,7 @@ clubs_out_cards = 4
 aces_out_cards = 1
 
 print(f'вероятность а равна {probability(all_cards, clubs_cards, all_out_cards, clubs_out_cards)}')
-print(f'вероятность b равна {probability(all_cards, aces_cards, all_out_cards, aces_out_cards)}')
+probability_b = 0
+for quantity_of_aces in range(1, 5):
+    probability_b += float(probability(all_cards, aces_cards, all_out_cards, quantity_of_aces)[:-1])
+print(f'вероятность b равна {probability_b}%')
