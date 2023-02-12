@@ -15,8 +15,8 @@ def probability(all_in, all_factored, all_out, factor_out):
     numerator = (f(all_factored) / (f(factor_out) * f(all_factored - factor_out))) * \
                 (f(non_factored) / (f(all_out - factor_out) * f(non_factored - all_out + factor_out)))
     denominator = f(all_in) / (f(all_out) * f(all_in - all_out))
-    return f'{round((numerator / denominator) * 100, 3)}%'
+    return round((numerator / denominator) * 100, 3)
 
 
 if __name__ == '__main__':
-    print(probability(all_details, coloured_details, quantity_out, coloured_out))
+    print(f'{probability(all_details, coloured_details, quantity_out, coloured_out)}%')
