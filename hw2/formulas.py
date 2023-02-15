@@ -10,7 +10,7 @@ def puasson(n, k, p):
 
 
 def baies(p_AB, p_A, p_B):
-    return p_AB * p_A / p_B
+    return p_AB * p_B / p_A
 
 def var(array, ddof = 0):
     avg = sum(array) / len(array)
