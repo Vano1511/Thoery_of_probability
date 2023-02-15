@@ -9,4 +9,11 @@ def puasson(n, k, p):
     return (pow(lam_da, k) * pow(2.72, (-1 * lam_da))) / f(k)
 
 
+def baies(p_AB, p_A, p_B):
+    return p_AB * p_A / p_B
 
+def var(array, ddof = 0):
+    avg = sum(array) / len(array)
+    return sum(pow(el - avg, 2) for el in array) / (len(array) - ddof)
+
+# print(round(bernuli(50, 0, 0.004) * 100, 2))
