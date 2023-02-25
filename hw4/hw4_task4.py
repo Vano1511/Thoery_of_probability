@@ -21,7 +21,7 @@ between_166_190 = round((distr.cdf(190) - distr.cdf(166)) * 100, 4)
 between_166_182 = round((distr.cdf(182) - distr.cdf(166)) * 100, 4)
 between_158_190 = round((distr.cdf(190) - distr.cdf(158)) * 100, 4)
 lower_150_higher_190 = round((distr.cdf(150) + 1 - distr.cdf(190)) * 100, 4)
-lower_150_higher_198 = round((distr.cdf(150) + 1 - distr.cdf(198)) * 100, 4)   
+lower_150_higher_198 = round((distr.cdf(150) + 1 - distr.cdf(198)) * 100, 4)
 lower_166 = round(distr.cdf(166) * 100, 4)
 print(f"а). больше 182 см : {higher_182} %\nб). больше 190 см : {higher_190} %\nв). от 166 см до 190 см : {between_166_190} %"
       f"\nг). от 166 см до 182 см : {between_166_182} %\nд). от 158 см до 190 см : {between_158_190} %\n"
