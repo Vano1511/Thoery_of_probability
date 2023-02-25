@@ -10,7 +10,7 @@ n = 100
 var = 4
 x_0 = 17
 x_n = 17.5
-limit = stats.t.ppf(1 - alpha, n)
+limit = stats.norm.ppf(1 - alpha)
 zet = (x_n - x_0) / np.sqrt(var / n)
 if zet <= limit:
     print(f'The H_0 hypotesis accepted')
